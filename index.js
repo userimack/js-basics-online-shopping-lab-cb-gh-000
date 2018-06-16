@@ -38,11 +38,11 @@ function generateCartDescription(){
 
 function total() {
   // write your code here
-  var total = 0
+  var sum = 0
   for(var i=0; i<getCart().length; i++){
-    total += getCart()[i].itemPrice;
+    sum += getCart()[i].itemPrice;
   }
-  return total;
+  return sum;
 }
 
 function removeFromCart(item) {
