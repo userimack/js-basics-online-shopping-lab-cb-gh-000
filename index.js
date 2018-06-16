@@ -29,9 +29,9 @@ function generateCartDescription(){
   }
   if (getCart().length >= 2) {
     for (var i=1; i<cart.length - 1; i++){
-      statement += `, ${getCart()[i].itemName} at ${getCart()[i].itemPrice}`
+      statement += `, ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`
     }
-    statement += `, and ${getCart()[getCart().length-1].itemName} at ${getCart()[getCart().length-1].itemPrice}`
+    statement += `, and ${getCart()[getCart().length-1].itemName} at $${getCart()[getCart().length-1].itemPrice}`
   }
   return `${statement}.`
 }
