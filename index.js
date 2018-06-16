@@ -19,11 +19,11 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  if (!getCart().length){
-    return "Your shopping cart is empty."
-  }
+  return getCart().length === 0 ? "Your shopping cart is empty." : generateCartDescription()
+}
 
-  const priceList = new Array();
+function generateCartDescription(){
+  const priceList = "";
   for (var i=0; i<cart.length; i++){
     priceList.push(`${cart[i].itemName} at ${cart[i].itemPrice}`)
   }
