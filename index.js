@@ -25,7 +25,7 @@ function viewCart() {
 function generateCartDescription(){
   const statement = "In your cart, you have ";
   if (getCart().length >= 1){
-    statement += 
+    statement += `${getCart()[0].itemName} at $${getCart()[0].itemPrice}`
   }
   for (var i=0; i<cart.length; i++){
     priceList.push(`${cart[i].itemName} at ${cart[i].itemPrice}`)
