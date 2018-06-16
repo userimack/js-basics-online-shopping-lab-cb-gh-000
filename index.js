@@ -29,7 +29,7 @@ function generateCartDescription(){
   }
   if (getCart().length >= 2)
   for (var i=1; i<cart.length - 1; i++){
-    priceList.push(`${getCart()[i].itemName} at ${getCart()[i].itemPrice}`)
+    statement += `, ${getCart()[i].itemName} at ${getCart()[i].itemPrice}`
   }
   return `${statement}.`
 }
