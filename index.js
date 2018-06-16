@@ -23,11 +23,11 @@ function viewCart() {
 }
 
 function generateCartDescription(){
-  const priceList = "";
+  const statement = "In your cart, you have";
   for (var i=0; i<cart.length; i++){
     priceList.push(`${cart[i].itemName} at ${cart[i].itemPrice}`)
   }
-  return `In your cart, you have ${}`
+  return `${}`
 }
 
 function total() {
