@@ -27,6 +27,7 @@ function generateCartDescription(){
   if (getCart().length >= 1){
     statement += `${getCart()[0].itemName} at $${getCart()[0].itemPrice}`
   }
+  if (getCart().length >= 2)
   for (var i=0; i<cart.length; i++){
     priceList.push(`${cart[i].itemName} at ${cart[i].itemPrice}`)
   }
