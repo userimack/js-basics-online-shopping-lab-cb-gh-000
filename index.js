@@ -30,7 +30,7 @@ function generateCartDescription(){
   for (var i=0; i<cart.length; i++){
     priceList.push(`${cart[i].itemName} at ${cart[i].itemPrice}`)
   }
-  return `${}`
+  return `${statement}.`
 }
 
 function total() {
