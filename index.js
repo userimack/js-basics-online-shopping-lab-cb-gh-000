@@ -38,7 +38,7 @@ function generateCartDescription(){
 
 function total() {
   // write your code here
-  total = 0
+  var total = 0
   for(var i=0; i<getCart().length; i++){
     total += getCart()[i].itemPrice;
   }
