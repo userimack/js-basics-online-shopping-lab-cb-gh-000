@@ -19,6 +19,14 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  if (!cart.length){
+    return "Your shopping cart is empty."
+  }
+
+  const priceList = new Array();
+  for (var i=0; i<cart.length; i++){
+    priceList.push(`${cart[i].itemName} at ${cart[i].itemPrice}`)
+  }
 }
 
 function total() {
